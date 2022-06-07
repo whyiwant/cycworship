@@ -1,0 +1,7 @@
+{
+  "name": "cycworship",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
