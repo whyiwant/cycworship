@@ -1,0 +1,31 @@
+ion-title {
+    // font-family: Montserrat, "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.content {
+    margin-left: 5px;
+
+    .lyricsContainer {
+        margin-left: 10px;
+    }
+}
+
+.chord,
+.chord-wrapper {
+    position: relative;
+    top: -0.5em;
+    display: inline-block;
+    width: 0;
+    // width: 0;
+    // overflow: visible;
+    // text-shadow: #CCC -1px 1px;
+    // color: #00F;
+    // font-weight: bold;
+    // font-family: Arial, Helvetica, sans-serif;
+}
+
+.chord {
+    width: fit-content;
+}

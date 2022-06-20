@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseToken: "1//0gPwJmQBjMOQTCgYIARAAGBASNwF-L9Ir8RxyKU5uqIoDrnNV0vc5MQKibaHMVDlUeErIQRttT2-iomjsBB-W4LrKZMSA3Km43Go"
 };
 
 /*
@@ -14,3 +15,5 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+// firebase deploy --token "1//0gPwJmQBjMOQTCgYIARAAGBASNwF-L9Ir8RxyKU5uqIoDrnNV0vc5MQKibaHMVDlUeErIQRttT2-iomjsBB-W4LrKZMSA3Km43Go"

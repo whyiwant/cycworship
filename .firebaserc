@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "test-5e504"
+  },
+  "targets": {
+    "test-5e504": {
+      "hosting": {
+        "cycworship": [
+          "cycworship"
+        ]
+      }
+    }
+  }
+}

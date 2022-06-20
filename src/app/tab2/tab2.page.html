@@ -1,17 +1,29 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>CYC Worship</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Key</ion-label>
+    <ion-select [(ngModel)]="key" (ionChange)="transpose()">
+      <ion-select-option *ngFor="let key of arrKey" value="{{key}}">{{key}}</ion-select-option>
+    </ion-select>
+  </ion-item>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <br>
+
+  <div class="content" *ngFor="let song of arrSong; let idx = index">
+    <ion-button color="dark" (click)="showSong(idx)">
+      <ion-label>{{song.name}}</ion-label>
+    </ion-button>
+    <div class="lyricsContainer">
+      <ion-label class="lyrics" id="{{'song' + (idx + 1)}}"></ion-label>
+    </div>
+    <br>
+
+
+  </div>
+
 </ion-content>
